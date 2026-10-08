@@ -5,6 +5,12 @@ body{
     min-height: 100vh;
     font-family: 'Kumbh Sans', sans-serif;
 }
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}   
 .main{
     width: 317px;
     height: 700px;

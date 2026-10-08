@@ -5,13 +5,13 @@ const root = createRoot(document.getElementById("root"));
 function Info(){
    return (
     <main className="main">
-        <img src="./photos/profile.png" alt="profile" className="profile"></img>
+        <img src="business-card/photos/profile.png" alt="profile" className="profile"></img>
             <p className="name">Laura Smith</p>
             <p className="job">Frontend Developer</p>
             <p className="website">laurasmith.website</p>
             <div className="buttons">
-                  <button className="email"><img src="./photos/icon.png" alt="email" className="email-icon"></img>Email</button>
-                  <button className="linkedin"><img src="./photos/linkedin.png" alt="linkedin" className="linkedin-icon"></img>LinkedIn</button>
+                  <button className="email"><img src="business-card/photos/icon.png" alt="email" className="email-icon"></img>Email</button>
+                  <button className="linkedin"><img src="business-card/photos/linkedin.png" alt="linkedin" className="linkedin-icon"></img>LinkedIn</button>
          </div>
 
    </main>
@@ -32,18 +32,18 @@ function Middle(){
 function Footer(){
     return(
      <section className="footer">
-        <img className="icon" src="./photos/Facebook.png" alt="face"></img>
-        <img className="icon" src="./photos/Instagram.png" alt="face"></img>
-        <img className="icon" src="./photos/Twitter.png" alt="face"></img>
-        <img className="icon" src="./photos/Github.png" alt="face"></img>
+        <img className="icon" src="business-card/photos/Facebook.png" alt="face"></img>
+        <img className="icon" src="business-card/photos/Instagram.png" alt="face"></img>
+        <img className="icon" src="business-card/photos/Twitter.png" alt="face"></img>
+        <img className="icon" src="business-card/photos/Github.png" alt="face"></img>
     </section>
     )
 }
 
 root.render(
-    <>
-     <Info /> 
-     <Middle />
-     <Footer />
-    </>               
+    <section className="card">
+        <Info /> 
+        <Middle />
+        <Footer />
+    </section>               
 )
