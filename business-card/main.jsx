@@ -1,17 +1,24 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
+import facebook from "photos/Facebook.png";
+import instagram from "photos/Instagram.png";
+import twitter from "photos/Twitter.png";
+import github from "photos/Github.png";
+import profile from "photos/profile.png";
+import email from "photos/icon.png";
+import linkedin from "photos/linkedin.png";
 const root = createRoot(document.getElementById("root"));
 
 function Info(){
    return (
     <main className="main">
-        <img src="business-card/photos/profile.png" alt="profile" className="profile"></img>
+        <img src={profile} alt="profile" className="profile"></img>
             <p className="name">Laura Smith</p>
             <p className="job">Frontend Developer</p>
             <p className="website">laurasmith.website</p>
             <div className="buttons">
-                  <button className="email"><img src="business-card/photos/icon.png" alt="email" className="email-icon"></img>Email</button>
-                  <button className="linkedin"><img src="business-card/photos/linkedin.png" alt="linkedin" className="linkedin-icon"></img>LinkedIn</button>
+                  <button className="email"><img src={email} alt="email" className="email-icon"></img>Email</button>
+                  <button className="linkedin"><img src={linkedin} alt="linkedin" className="linkedin-icon"></img>LinkedIn</button>
          </div>
 
    </main>
@@ -32,10 +39,10 @@ function Middle(){
 function Footer(){
     return(
      <section className="footer">
-        <img className="icon" src="business-card/photos/Facebook.png" alt="face"></img>
-        <img className="icon" src="business-card/photos/Instagram.png" alt="face"></img>
-        <img className="icon" src="business-card/photos/Twitter.png" alt="face"></img>
-        <img className="icon" src="business-card/photos/Github.png" alt="face"></img>
+        <img className="icon" src={facebook} alt="face"></img>
+        <img className="icon" src={instagram} alt="face"></img>
+        <img className="icon" src={twitter} alt="face"></img>
+        <img className="icon" src={github} alt="face"></img>
     </section>
     )
 }
