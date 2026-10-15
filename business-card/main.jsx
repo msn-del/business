@@ -1,12 +1,12 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import facebook from "photos/Facebook.png";
-import instagram from "photos/Instagram.png";
-import twitter from "photos/Twitter.png";
-import github from "photos/Github.png";
-import profile from "photos/profile.png";
-import email from "photos/icon.png";
-import linkedin from "photos/linkedin.png";
+import facebook from "./photos/facebook.png";
+import instagram from "./photos/instagram.png";
+import twitter from "./photos/twitter.png";
+import github from "./photos/github.png";
+import profile from "./photos/profile.png";
+import email from "./photos/icon.png";
+import linkedin from "./photos/linkedin.png";
 const root = createRoot(document.getElementById("root"));
 
 function Info(){
